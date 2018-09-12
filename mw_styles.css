@@ -168,6 +168,9 @@ aside#tour_itinerary>p:nth-of-type(6) {
 
 
 /* Blockquote Styles */
+/* 
+The blockquote styles code holds style rules for the blockquote element. This alters the how element looks. Such as the colors, spacing, and how the text looks. The code below has some of the basic style rules.
+*/
 blockquote {
     background-color: rgb(173, 189, 227);
     color: rgb(225, 225, 255);
