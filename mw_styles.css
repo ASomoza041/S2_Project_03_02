@@ -14,6 +14,9 @@
 
 
 /* Structural Styles */
+/* 
+The structural styles code holds style rules for the sectoning elements. This alters the how elements looks. Such as the colors, spacing, and how the text looks.
+*/
 
 html {
     background-color: rgb(173, 189, 227);
@@ -40,6 +43,9 @@ address {
 }
 
 /* Heading Styles */
+/* 
+The heading styles code holds style rules for the header elements. This alters how the elements looks. Such as the colors, spacing, and how the text looks. There were minimal changes to the headings, I only set the font weight.
+*/
 h1 {
     font-weight: normal;
 }
@@ -49,33 +55,125 @@ h2 {
 }
 
 /* Navigation Styles */
+/* 
+The navigation styles code holds style rules for the nav element. This alters how the elements looks. Such as the colors, spacing, and how the text looks. These style rules get more specific about what it wants to affect. For example, when hovering over a hypertext link, it changes to a red color. 
+*/
 nav>ul {
-    text-decoration: none;
+    list-style-type: none;
     line-height: 2em;
     font-size: 0.9em;
 }
 
-nav>ul>li:link,
-nav>ul>li:visited {
+nav>ul>li>a:link,
+nav>ul>li>a:visited {
     text-decoration: none;
     color: rgb(43, 59, 125);
 }
 
 
 
-nav>ul>li:hover,
-nav>ul>li:active {}
+nav>ul>li>a:hover,
+nav>ul>li>a:active {
+    color: rgb(212, 35, 35);
+}
 
 
 
 
 /* Article Styles */
+/* 
+The article styles code holds style rules for the article element. This alters how the elements looks. Such as the colors, spacing, and how the text looks. To change how these looked we had to use classes to target certain elements.
+*/
+article#tour_summary>header>h1 {
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+}
+
+article#tour_summary>p {
+    font-size: 1.1em;
+}
+
+article#tour_summary>p:first-of-type::first-line {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
 
 
 
 
 /* Aside Styles */
+/* 
+The aside styles code holds style rules for the aside element. This alters the how elements looks. Such as the colors, spacing, and how the text looks. By putting the descendents and classes in the selector I was abke to target specific paragraphs and headers.
+*/
+
+
+aside#tour_itinerary>header>h1 {
+    font-size: 1.2em;
+}
+
+aside#tour_itinerary>h2 {
+    font-size: 0.9em;
+}
+
+aside#tour_itinerary>p {
+    font-size: 0.8em;
+}
+
+aside#tour_itinerary>h2:nth-of-type(1){
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary>p:nth-of-type(1) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary>h2:nth-of-type(3) {
+    color: rgb(79, 91, 40);
+}
+
+aside#tour_itinerary>p:nth-of-type(3) {
+    color: rgb(79, 91, 40);
+}
+
+
+aside#tour_itinerary>h2:nth-of-type(5) {
+    color: rgb(79, 91, 40);
+}
+aside#tour_itinerary>p:nth-of-type(5) {
+    color: rgb(79, 91, 40);
+}
+
+
+aside#tour_itinerary>h2:nth-of-type(2) {
+    color: rgb(81, 95, 175);
+}
+aside#tour_itinerary>p:nth-of-type(2) {
+    color: rgb(81, 95, 175);
+}
+
+aside#tour_itinerary>h2:nth-of-type(4) {
+    color: rgb(81, 95, 175);
+}
+aside#tour_itinerary>p:nth-of-type(4) {
+    color: rgb(81, 95, 175);
+}
+
+aside#tour_itinerary>h2:nth-of-type(6) {
+    color: rgb(81, 95, 175);
+}
+aside#tour_itinerary>p:nth-of-type(6) {
+    color: rgb(81, 95, 175);
+}
 
 
 
 /* Blockquote Styles */
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgb(225, 225, 255);
+    opacity: 0.65;
+}
+
+blockquote>p {
+    padding: 2.5px 10px 2.5px 10px;
+}
